@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Horse</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="logo">
+            <span class="logo-icon">♞</span>
+            <span>Horse</span>
+        </div>
+
+        <span class="explore-menu">Explore more →</span>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="main-nav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./horse.html">Breeds</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <!-- Horse -->
+            <div class="horse-area">
+
+                <a href="./about.html" class="horse-link">
+
+                    <img
+                        src="./horse.png"
+                        class="single-horse"
+                        alt="Horse"
+                    >
+
+                </a>
+
+                <p class="horse-hint">
+                    Click the horse ←
+                </p>
+
+            </div>
+
+
+            <!-- Welcome -->
+            <div class="welcome-content">
+
+                <h1 class="welcome-title">
+                    Welcome
+                </h1>
+
+                <p class="welcome-text" id="horsess">
+                    To the world of horse and equestrian enthusiasts.
+                </p>
+
+               
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        window.onload = function () {
+
+            const menuToggle = document.querySelector(".menu-toggle");
+            const mainNav = document.querySelector(".main-nav");
+
+            menuToggle.onclick = function () {
+
+                mainNav.classList.toggle("open");
+                menuToggle.classList.toggle("open");
+
+            };
+
+        };
+    </script>
+
+</body>
+
+</html>

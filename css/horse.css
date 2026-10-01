@@ -1,0 +1,93 @@
+.horse{ background: fixed;
+    background-color: black;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+body{ 
+    background-color: black;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    
+}
+.about-header{
+    color: #d6b06a;
+    font-size:38px ;
+
+}
+
+.about-nav {
+    display: flex;
+    align-items: center;
+  
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* header */
+.about-header site-header{
+
+ position:fixed;
+ top: 0;
+ left: 0;
+
+ width: 100%;
+ height: 78%;
+
+ display: flex;
+ align-items: center;
+
+ justify-content: space-between;
+
+ padding: 0 45px;
+
+  background: #050505;
+    border-bottom: 1px solid #8f6b32;
+
+    z-index: 9999;
+}
+.about-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #d6b06a;
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about-logo span:first-child {
+    font-size: 38px;
+}
+.horse-nav{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+.horse-nav a{
+    color: #d6b06a;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    
+}
+
+.horse-nav a:hover {
+    color: white;
+}
+
+.horse-nav a.active {
+    color: white;
+}

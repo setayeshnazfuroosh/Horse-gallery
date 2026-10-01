@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breeds | Horses</title>
+<link rel="stylesheet" href="./breeds.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo"><span class="logo-icon">♞</span><span>Horse</span></div>
+    <span class="explore-menu">Explore more →</span>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./horse.html" class="active">Breeds</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="breeds-hero">
+        <p class="small-title">THE WORLD OF HORSES</p>
+        <h1>Horse Breeds</h1>
+        <p class="hero-text">Explore different horse breeds, their age, color and the equipment selected for your horse.</p>
+    </section>
+
+    <section class="breeds-section">
+        <div class="section-heading">
+            <span></span>
+            <h2>Featured Breeds</h2>
+            <span></span>
+        </div>
+
+        <div class="breed-grid">
+            <article class="breed-card">
+                <div class="breed-number">01</div>
+                <div class="breed-icon">♞</div>
+                <h3>Persian</h3>
+                <p>Age: <strong>20 years</strong></p>
+                <p>Color: <strong>Black</strong></p>
+                <div class="gold-line"></div>
+            </article>
+
+            <article class="breed-card">
+                <div class="breed-number">02</div>
+                <div class="breed-icon">♞</div>
+                <h3>German</h3>
+                <p>Age: <strong>10 years</strong></p>
+                <p>Color: <strong>Brown</strong></p>
+                <div class="gold-line"></div>
+            </article>
+        </div>
+
+        <div class="section-heading second-heading">
+            <span></span>
+            <h2>Horse Selection</h2>
+            <span></span>
+        </div>
+
+        <form class="horse-form">
+            <div class="form-group">
+                <label>Horse color</label>
+                <div class="choice-row">
+                    <label class="choice"><input type="radio" name="color" value="black"> <span>Black</span></label>
+                    <label class="choice"><input type="radio" name="color" value="brown"> <span>Brown</span></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Horse age</label>
+                <div class="choice-row">
+                    <label class="choice"><input type="radio" name="age" value="10" checked> <span>10</span></label>
+                    <label class="choice"><input type="radio" name="age" value="20"> <span>20</span></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Number of horses</label>
+                <select id="number" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Choose your equipment</label>
+                <div class="equipment-grid">
+                    <label class="check-card"><input type="checkbox" name="need" value="Riding boots"><span>Riding boots</span></label>
+                    <label class="check-card"><input type="checkbox" name="need" value="Riding clothes"><span>Riding clothes</span></label>
+                    <label class="check-card"><input type="checkbox" name="need" value="Equestrian helmet"><span>Equestrian helmet</span></label>
+                    <label class="check-card"><input type="checkbox" name="need" value="Zain"><span>Zain</span></label>
+                    <label class="check-card"><input type="checkbox" name="need" value="Equestrian gloves"><span>Equestrian gloves</span></label>
+                </div>
+            </div>
+
+            <button class="submit-button" type="submit">Save Selection</button>
+            <p class="form-message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.classList.toggle("open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
+
+const form = document.querySelector(".horse-form");
+const message = document.querySelector(".form-message");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    message.textContent = "Your horse selection has been saved.";
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Horses  </title>
+
+    <meta name="description"
+        content="Learn about horses, horse breeds, colors, care, behavior, horse riding, and the world of equestrianism.">
+
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+
+    <header class="about-header">
+
+        <div class="about-logo">
+            <span>♞</span>
+            <span>Horse</span>
+        </div>
+
+        <button class="about-menu-toggle" type="button" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="about-nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" class="active">About</a>
+            <a href="./horse.html">Breeds</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="about-hero-text">
+            <h1>ABOUT HORSES</h1>
+            <p>Discover the fascinating world of horses</p>
+        </div>
+
+
+        <section class="horse-intro">
+
+            <div class="horse-intro-text">
+
+                <h2>What Is a Horse?</h2>
+
+                <p>
+                    Horses are beautiful, intelligent, and powerful animals
+                    that have shared a close relationship with humans for
+                    thousands of years. They are known for their strength,
+                    speed, elegance, and unique personalities.
+                </p>
+
+                <p>
+                    Horses are used for many different activities, including
+                    riding, equestrian sports, recreation, and work. They are
+                    also social animals that can build strong relationships
+                    with both horses and humans.
+                </p>
+
+            </div>
+
+            <div class="horse-intro-image">
+
+                <img
+                    src="./horse-about.jpeg"
+                    alt="Horse standing in a natural landscape"
+                >
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Horse Breeds</h2>
+
+            <p>
+                There are many horse breeds around the world. Every breed
+                has its own history, appearance, characteristics, and
+                abilities. Some horses are known for their speed, while
+                others are valued for their strength, endurance, or
+                suitability for riding.
+            </p>
+
+            <article>
+                <h3>Persian Horse</h3>
+
+                <img
+                    src="./persian-horse.jpeg"
+                    alt="Persian horse"
+                >
+
+                <p>
+                    Persian horses have a long history and are connected
+                    with the rich equestrian traditions of Persia. They
+                    are appreciated for their appearance, endurance, and
+                    historical importance.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>German Horse Breeds</h3>
+
+                <img
+                    src="./german-horse.jpeg"
+                    alt="German horse"
+                >
+
+                <p>
+                    German horse breeds include several well-known breeds
+                    developed for riding, sport, and other equestrian
+                    activities. Many are known for their athletic ability,
+                    strength, and trainability.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Horse Colors</h2>
+
+            <p>
+                Horses can have many different coat colors and patterns.
+                Common horse colors include black, brown, bay, chestnut,
+                gray, and white. Horse coat color is influenced by
+                genetics, and some breeds are known for particular colors
+                or patterns.
+            </p>
+            <ul>
+                <li>Black</li>
+                <li>Brown</li>
+                <li>Bay</li>
+                <li>Chestnut</li>
+                <li>Gray</li>
+                <li>White</li>
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>Horse Care</h2>
+
+            <p>
+                Taking care of a horse is an important responsibility.
+                Horses need appropriate food, clean water, regular
+                exercise, grooming, veterinary care, and a safe living
+                environment.
+            </p>
+
+            <p>
+                Regular grooming helps keep a horse's coat, mane, and
+                tail clean. Horses also need regular hoof care because
+                healthy hooves are important for movement and overall
+                well-being.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Equestrianism and Horse Riding</h2>
+
+            <p>
+                Equestrianism is the practice and sport of riding,
+                training, and working with horses. Horse riding includes
+                different disciplines and activities, such as dressage,
+                show jumping, and recreational riding.
+            </p>
+
+            <p>
+                Working with horses requires communication, patience,
+                practice, responsibility, and respect for the animal.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Why Do People Love Horses?</h2>
+
+            <p>
+                People are attracted to horses for many different
+                reasons. Their beauty, strength, intelligence, and
+                individual personalities make them fascinating animals.
+            </p>
+
+            <p>
+                For many riders, spending time with a horse can also be
+                a way to develop patience, responsibility, confidence,
+                and a connection with nature.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Conclusion</h2>
+
+            <p>
+                Horses are remarkable animals with a long and important
+                relationship with humans. Learning about horse breeds,
+                behavior, colors, care, and equestrianism can help us
+                understand these animals better and appreciate their
+                important place in the world.
+            </p>
+
+        </section>
+
+
+        <a href="./index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </main>
+
+
+    <script>
+        window.onload = function () {
+
+            const menuButton = document.querySelector(".about-menu-toggle");
+            const menu = document.querySelector(".about-nav");
+
+            menuButton.onclick = function () {
+                menu.classList.toggle("open");
+                menuButton.classList.toggle("open");
+            };
+
+        };
+    </script>
+
+</body>
+
+</html>
